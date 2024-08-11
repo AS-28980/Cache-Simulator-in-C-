@@ -1,0 +1,8 @@
+1) Enter all sizes in bits in the config file
+2) Enter only 0/1/2/4/8/16 for associativity
+3) 0x in the access file is optional, but keep the format
+    R/W: (...)  {Keep the colon and spaces in mind}
+4) All parts are implemented, but part 4 is implemented only in the sense that 
+    whenever writes happen for write back, the dirty bit for a block is set to 1
+    There is no real consequence to this action as far as the code is concerned since
+    there is no connection to a main memory anywhere
